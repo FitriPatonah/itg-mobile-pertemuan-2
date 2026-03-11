@@ -15,11 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Navigation Demo',
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.indigo,
+      ),
 
-      // halaman utama yang ditampilkan saat aplikasi dijalankan
       initialRoute: '/',
-      // daftar rute yang tersedia dalam aplikasi
+
       routes: {
         '/': (context) => const HomeMenuPage(),
         routeInfo: (context) => const InfoPage(),
